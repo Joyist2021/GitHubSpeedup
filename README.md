@@ -1,32 +1,45 @@
 # 
-## 国内加速访问 GitHub Speedup
-# 一、查询网址对应的 IP 地址
-# 
-# 1.进入查询地址：https://site.ip138.com/ https://www.ip.cn/ https://www.ipaddress.com/ 
-# 
-# 2.查询下面域名（domain）连接的dns解析地址：
-# github.com
-# assets-cdn.github.com
-# github.global.ssl.fastly.net
-# raw.githubusercontent.com
-# codeload.github.com 
-# 
-# 3.修改系统hosts文件
-# 打开系统hosts文件（管理员权限）
-# windows路径：C:\Windows\System32\drivers\etc
-# mac打开方式 sudo vim /etc/hosts
-# 在末尾添加三行记录并保存。注意ip地址与域名间需要有空格
-# 例如：52.74.223.119 github.com	# source server
-#
+# 国内加速访问 GitHub Speedup
+## 一、查询网址对应的 IP 地址
+
+## 1.进入查询地址：https://site.ip138.com/ https://www.ip.cn/ https://www.ipaddress.com/ 
+
+## 2.查询下面域名（domain）连接的dns解析地址：
+
+github.com
+
+assets-cdn.github.com
+
+github.global.ssl.fastly.net
+
+raw.githubusercontent.com
+
+codeload.github.com 
+
+## 3.修改系统hosts文件
+
+ 打开系统hosts文件（管理员权限）
+ 
+##windows路径：C:\Windows\System32\drivers\etc
+
+## mac打开方式 sudo vim /etc/hosts
+
+在末尾添加三行记录并保存。注意ip地址与域名间需要有空格
+ 例如：52.74.223.119 github.com	# source server
+
 # 4.刷新系统dns缓存
-# windows：
-# Windows + X 打开系统命令行（管理员身份）或者 powershell
-# 运行 ipconfig /flushdns 手动刷新系统dns缓存
-# mac运行 ：sudo killall -HUP mDNSResponder
-# 
+## windows：
+
+ Windows + X 打开系统命令行（管理员身份）或者 powershell
+ 
+  运行 ipconfig /flushdns 手动刷新系统dns缓存
+  
+## mac运行 ：sudo killall -HUP mDNSResponder
+
+
 # 5.大功告成
-# 
-#
+
+"
 # For example:：
 #
 # 102.54.94.97	rhino.acme.com	# source server
@@ -64,3 +77,6 @@
 13.250.162.133 codeload.github.com
 54.251.140.56 codeload.github.com
 13.229.189.0 codeload.github.com
+"
+
+
